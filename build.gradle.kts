@@ -12,3 +12,12 @@ buildscript {
         classpath ("com.google.gms:google-services:4.3.10")
     }
 }
+// filepath: /C:/Users/Saqib/OneDrive - Punjab Group of Colleges/UCP/Semester 5/Mobile Application Development (E14) - Ihtisham Ul Haq/Assesments/Project/BankingProject/app/build.gradle
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services' // Add this line
+
+dependencies {
+    // Add these lines
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+}
