@@ -1,0 +1,426 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/back"
+   android:background="@color/black">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:background="@color/black"
+       android:paddingEnd="16dp">
+       <TextView
+           android:id="@+id/appTitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start|center_vertical"
+           android:fontFamily="serif"
+           android:text="Vaultify"
+           android:textColor="#FFEB3B"
+           android:textSize="35sp"
+           android:textStyle="bold" />
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/userIcon"
+           android:layout_width="30dp"
+           android:layout_height="50dp"
+           android:layout_gravity="end|center_vertical"
+           android:layout_marginStart="16dp"
+           android:contentDescription="Notifications"
+           android:src="@drawable/user" />
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/locationIcon"
+           android:layout_width="30dp"
+           android:layout_height="50dp"
+           android:layout_gravity="end|center_vertical"
+           android:layout_marginStart="16dp"
+           android:background="#00D57AE2"
+           android:contentDescription="Location"
+           android:src="@drawable/location" />
+   </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/black">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/gradiant">
+
+                <TextView
+                    android:id="@+id/wellcome"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="serif"
+                    android:text="Welcome"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wellcome"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="serif"
+                    android:text="Ali"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/balance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="serif"
+                    android:text="Current Balance"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/balance_label"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="serif"
+                    android:text="Rs. 1000.00"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+   <RelativeLayout
+       android:id="@+id/relitivelayoutbelow"
+       android:layout_width="match_parent"
+       android:layout_height="452dp"
+       android:layout_marginTop="280dp"
+       android:padding="16dp">
+
+       <TextView
+           android:id="@+id/action"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="4dp"
+           android:fontFamily="serif"
+           android:text="Let's Action"
+           android:textColor="#FFEB3B"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+
+       <HorizontalScrollView
+           android:id="@+id/scrollView"
+           android:layout_width="377dp"
+           android:layout_height="102dp"
+           android:layout_below="@id/action"
+           android:layout_marginTop="20dp"
+           android:fillViewport="true">
+
+           <LinearLayout
+               android:layout_width="390dp"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="115dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp">
+
+                   <ImageButton
+                       android:id="@+id/send"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:background="@drawable/oval_button"
+                       android:backgroundTint="#FFEB3B"
+                       android:contentDescription="Transfer"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/sned" />
+
+                   <TextView
+                       android:id="@+id/sendtext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/send"
+                       android:layout_alignStart="@+id/send"
+                       android:layout_marginStart="10dp"
+                       android:text="Send"
+                       android:textColor="@color/white"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="115dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp">
+
+                   <ImageButton
+                       android:id="@+id/topup"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:background="@drawable/oval_button"
+                       android:backgroundTint="#FFEB3B"
+                       android:contentDescription="Transfer"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/topup" />
+
+                   <TextView
+                       android:id="@+id/recivetext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/topup"
+                       android:layout_marginStart="18dp"
+                       android:text="Top-up"
+                       android:textColor="@android:color/white"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="115dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp">
+
+                   <ImageButton
+                       android:id="@+id/bill"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:background="@drawable/oval_button"
+                       android:backgroundTint="#FFEB3B"
+                       android:contentDescription="Transfer"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/bill" />
+
+                   <TextView
+                       android:id="@+id/billtext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/bill"
+                       android:layout_marginStart="35dp"
+                       android:text="Bill"
+                       android:textColor="@android:color/white"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="115dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp">
+
+                   <ImageButton
+                       android:id="@+id/loan"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:background="@drawable/oval_button"
+                       android:backgroundTint="#FFEB3B"
+                       android:contentDescription="Transfer"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/loan" />
+
+                   <TextView
+                       android:id="@+id/loantext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/loan"
+                       android:layout_marginStart="25dp"
+                       android:text="Loan"
+                       android:textColor="@android:color/white"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="115dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="10dp">
+
+                   <ImageButton
+                       android:id="@+id/commerce"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:background="@drawable/oval_button"
+                       android:backgroundTint="#FFEB3B"
+                       android:contentDescription="Transfer"
+                       android:scaleType="centerInside"
+                       android:src="@drawable/comrance" />
+
+                   <TextView
+                       android:id="@+id/commercetext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/commerce"
+                       android:layout_marginStart="16dp"
+                       android:text="Commerce"
+                       android:textColor="@android:color/white"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+           </LinearLayout>
+       </HorizontalScrollView>
+
+       <TextView
+           android:id="@+id/last_activity"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/scrollView"
+           android:layout_marginStart="4dp"
+           android:layout_marginTop="30dp"
+           android:fontFamily="serif"
+           android:text="Last Activity"
+           android:textColor="#FFEB3B"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="146dp"
+           android:layout_below="@+id/last_activity"
+           android:fillViewport="true">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/last_activity1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/last_activity"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="serif"
+                   android:text="Transferred Rs 500.00 to Ali Irfan"
+                   android:textColor="@android:color/white"
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/last_activity2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/last_activity1"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginTop="8dp"
+                   android:fontFamily="serif"
+                   android:text="Transferred Rs 500.00 to M.Irfan"
+                   android:textColor="@android:color/white"
+                   android:textSize="16sp" />
+               <TextView
+                   android:id="@+id/last_activity3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/last_activity2"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginTop="8dp"
+                   android:fontFamily="serif"
+                   android:text="Transferred Rs 500.00 to M.Irfan"
+                   android:textColor="@android:color/white"
+                   android:textSize="16sp" />
+               <TextView
+                   android:id="@+id/last_activity4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/last_activity3"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginTop="8dp"
+                   android:fontFamily="serif"
+                   android:text="Transferred Rs 500.00 to M.Irfan"
+                   android:textColor="@android:color/white"
+                   android:textSize="16sp" />
+
+               <ProgressBar
+                   android:id="@+id/loadingProgressBar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:visibility="gone" />
+
+
+           </LinearLayout>
+       </ScrollView>
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginTop="665dp"
+       android:orientation="horizontal">
+
+       <Button
+           android:id="@+id/bthome"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Home"
+           android:backgroundTint="#FFEB3B"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           ></Button>
+
+       <Button
+           android:id="@+id/btcard"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:backgroundTint="#FFEB3B"
+           android:text="Card"
+           android:textColor="@color/black"
+           android:textStyle="bold"></Button>
+
+       <Button
+           android:id="@+id/bthelp"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:backgroundTint="#FFEB3B"
+           android:text="Help"
+           android:textColor="@color/black"
+           android:textStyle="bold"></Button>
+
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

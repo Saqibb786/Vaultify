@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmationscreen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transection Confirm"
+                android:id="@+id/donepayment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account holder Name"
+                android:id="@+id/sendingname"
+                android:layout_below="@+id/donepayment"
+                android:layout_marginTop="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:id="@+id/sendingamount"
+                android:layout_marginTop="20sp"
+                android:layout_below="@+id/sendingname"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Transection"
+                android:id="@+id/timetransection"
+                android:layout_below="@+id/sendingamount"
+                android:layout_marginTop="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <Button
+                android:id="@+id/nextmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="115dp"
+                android:backgroundTint="#FFEB3B"
+                android:layout_below="@+id/timetransection"
+                android:layout_marginTop="150dp"
+                android:fontFamily="serif"
+                android:text="Back to Home Screen"
+                android:textColor="#092743"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

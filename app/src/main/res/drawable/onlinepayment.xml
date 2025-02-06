@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Circle (representing online connection) -->
+    <path
+        android:pathData="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2ZM12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C16.42,4 20,7.58 20,12C20,16.42 16.42,20 12,20Z"
+        android:fillColor="@color/white" />
+
+    <!-- Wi-Fi signal (representing internet) -->
+    <path
+        android:pathData="M12,16C14.21,16 16,14.21 16,12C16,9.79 14.21,8 12,8C9.79,8 8,9.79 8,12C8,14.21 9.79,16 12,16ZM12,14C10.34,14 9,12.66 9,11C9,9.34 10.34,8 12,8C13.66,8 15,9.34 15,11C15,12.66 13.66,14 12,14Z"
+        android:fillColor="#FFEB3B" />
+
+</vector>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/main"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙ Settings"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#FFEB3B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/notification_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔔 Enable Notifications"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/settings_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/notification_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/security_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒 Security Settings"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switch_notifications"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/change_password_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Change Password"
+        android:textSize="16sp"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#092743"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/security_label"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+        android:id="@+id/theme_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎨 Select Theme"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/change_password_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/theme_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/theme_label"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/save_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save Settings"
+        android:textSize="16sp"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#092743"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/theme_spinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

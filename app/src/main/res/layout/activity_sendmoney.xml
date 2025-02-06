@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sendmoney"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:id="@+id/sendingdata"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/accountnumber"
+            android:layout_width="305dp"
+            android:layout_height="63dp"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/box"
+            android:fontFamily="serif"
+            android:hint="Account Number"
+            android:padding="14dp"
+            android:textColor="#092743"
+            android:textColorHint="#092743"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/sendmoney"
+            android:layout_width="305dp"
+            android:layout_height="63dp"
+            android:singleLine="true"
+            android:layout_below="@+id/accountnumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/box"
+            android:fontFamily="serif"
+            android:hint="sending Amount"
+            android:padding="14dp"
+            android:textColor="#092743"
+            android:textColorHint="#092743"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFEB3B"
+            android:fontFamily="serif"
+            android:text="Fetch Account"
+            android:textColor="#092743"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:id="@+id/sendinginfo"
+        tools:layout_editor_absoluteY="278dp"
+        app:layout_constraintTop_toBottomOf="@id/sendingdata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:padding="16dp"
+                android:background="#CCC9C9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account holder Name"
+                android:id="@+id/sendingname"
+                android:layout_marginTop="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="#DE190D"
+                android:textSize="20sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Number"
+                    android:id="@+id/sendingnumb"
+                    android:layout_below="@+id/sendingname"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:textColor="#DE190D"
+                    android:textSize="20sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:id="@+id/sendingamount"
+                android:layout_marginTop="20sp"
+                android:layout_below="@+id/sendingnumb"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="#DE190D"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Name "
+                android:id="@+id/brachname"
+                android:layout_below="@+id/sendingamount"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="serif"
+                android:textColor="#DE190D"
+                android:textSize="20sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Transection"
+                    android:id="@+id/transection"
+                    android:layout_below="@+id/brachname"
+                    android:layout_marginTop="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:textColor="#DE190D"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Transection"
+                    android:id="@+id/datetransection"
+                    android:layout_below="@+id/transection"
+                    android:layout_marginTop="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:textColor="#DE190D"
+                    android:textSize="20sp"></TextView>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/confirmmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFEB3B"
+            android:fontFamily="serif"
+            android:text="Confirm"
+            android:textColor="#092743"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

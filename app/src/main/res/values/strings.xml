@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BankingProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="google_maps_key">AIzaSyAiJbQIjPcnO67hU50j5azdEmhrsR4jqxU</string>
+    <string-array name="theme_options">
+
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string name="international_transactions">International Transactions</string>
+    <string name="online_transactions">Online Transactions</string>
+
+
+</resources>

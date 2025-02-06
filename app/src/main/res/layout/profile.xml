@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profilemain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bank1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ali Irfan"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ali.irfan@email.com"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bank Account Number -->
+    <TextView
+        android:id="@+id/acountlabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Number:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/acountnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**** **** **** 5678"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/acountlabe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFEB3B"
+        app:layout_constraintTop_toBottomOf="@id/acountnumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Edit Profile"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#092743"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/acountnumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Settings"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#092743"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:backgroundTint="#E53935"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

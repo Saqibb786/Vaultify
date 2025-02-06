@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bank1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/circle_shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaultify"
+            android:fontFamily="serif"
+            android:textSize="36sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="305dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/appName"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box"
+            android:fontFamily="serif"
+            android:hint="Name"
+            android:layout_marginTop="40dp"
+            android:singleLine="true"
+            android:textColor="#092743"
+            android:textColorHint="#092743"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mobilenumb"
+            android:layout_width="305dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box"
+            android:fontFamily="serif"
+            android:hint="+92"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:textColor="#092743"
+            android:textColorHint="#092743"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passaccount"
+            android:layout_width="305dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/mobilenumb"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box"
+            android:fontFamily="serif"
+            android:password="true"
+            android:hint="Account Password"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:textColor="#092743"
+            android:textColorHint="#092743"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/verifmobilebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passaccount"
+            android:backgroundTint="#FFEB3B"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="serif"
+            android:text="Next"
+            android:layout_marginTop="20dp"
+            android:textColor="#092743"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
