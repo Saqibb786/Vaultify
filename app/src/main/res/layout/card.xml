@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/card_number"
                     android:layout_marginTop="10dp"
-                    android:text="Ayaan Zaman Khattak"
+                    android:text="Abdullah Naveeed"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:fontFamily="serif"

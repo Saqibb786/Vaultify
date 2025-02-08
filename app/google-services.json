@@ -1,26 +1,37 @@
 {
   "project_info": {
-    "project_number": "720765397516",
-    "project_id": "bankingproject-1fe91",
-    "storage_bucket": "bankingproject-1fe91.firebasestorage.app"
+    "project_number": "113109835710",
+    "firebase_url": "https://vaultify-c7114-default-rtdb.firebaseio.com",
+    "project_id": "vaultify-c7114",
+    "storage_bucket": "vaultify-c7114.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:720765397516:android:188881682a813839f29c29",
+        "mobilesdk_app_id": "1:113109835710:android:e2839672a716791fa8a3ef",
         "android_client_info": {
           "package_name": "com.example.bankingproject"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "113109835710-d5sntsag0dl9kv5tnff8q5m4lir96rde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyB8NlAeKgREFi_Ksv6Xicsl32LI4I__KeE"
+          "current_key": "AIzaSyAiJbQIjPcnO67hU50j5azdEmhrsR4jqxU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113109835710-8u5sorc75sndin2vcb5tmnns6upsuof1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

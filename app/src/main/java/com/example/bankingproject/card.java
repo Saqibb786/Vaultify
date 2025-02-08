@@ -46,7 +46,7 @@ public class card extends AppCompatActivity {
         copyIcon = findViewById(R.id.copy);
 
         String cardNumber = generateCardNumber();
-        String cardHolderName = "Ali Irfan";
+        String cardHolderName = "Abdullah Naveed";
         String expirationDate = generateExpirationDate();
 
         cardNumberTextView.setText(cardNumber);
